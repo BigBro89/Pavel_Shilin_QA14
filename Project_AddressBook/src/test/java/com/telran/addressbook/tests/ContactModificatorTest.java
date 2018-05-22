@@ -1,6 +1,10 @@
 package com.telran.addressbook.tests;
 
-public class ContactModificatorTest {
+import org.testng.annotations.Test;
 
+public class ContactModificatorTest extends TestBase {
+
+  //  @Test
+   // app.
 
 }

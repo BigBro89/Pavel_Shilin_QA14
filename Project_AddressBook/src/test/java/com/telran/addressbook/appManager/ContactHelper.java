@@ -9,14 +9,11 @@ import java.util.concurrent.TimeUnit;
 
 import static junit.framework.TestCase.assertTrue;
 
-public class ContactHelper {
-
-    private WebDriver driver;
+public class ContactHelper extends HelperBase {
 
     public ContactHelper(WebDriver driver){
-        this.driver= driver;
+        super(driver);
     }
-
 
     private boolean acceptNextAlert = true;
 

@@ -10,9 +10,9 @@ public class GroupHelper extends HelperBase {
         super(driver);
     }
 
-    public void returnToGroupsPage() {
-        click(By.linkText("group page"));
-    }
+//    public void returnToGroupsPage() {
+//        click(By.linkText("group page"));
+//    }
 
     public void submitGroupCreation() {
         click(By.name("submit"));

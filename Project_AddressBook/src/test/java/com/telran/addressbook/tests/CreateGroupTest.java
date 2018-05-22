@@ -13,7 +13,7 @@ public class CreateGroupTest extends TestBase {
     app.getGroupHelper().initGroupCreation();
     app.getGroupHelper().fillGroupForm(new GroupData("name", "header", "footer"));
     app.getGroupHelper().submitGroupCreation();
-    app.getGroupHelper().returnToGroupsPage();
+    app.getNavigationHelper().goToGroupsPage();
     int after = app.getGroupHelper().getGroupCount();
     Assert.assertEquals(after,before+1);
   }

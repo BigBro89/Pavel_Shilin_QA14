@@ -1,6 +1,7 @@
 package com.telran.addressbook.appManager;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 
 public class HelperBase {
@@ -21,4 +22,14 @@ public class HelperBase {
     protected void click(By locator) {
         driver.findElement(locator).click();
     }
+
+    private boolean isElementPresent(By by){
+        try{
+            driver.findElement(by);
+            return true;
+        }catch (NoSuchElementException e){
+            return false;
+        }
+    }
+
 }

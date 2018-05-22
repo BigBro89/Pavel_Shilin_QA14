@@ -15,14 +15,14 @@ public class CreateContactsTest extends TestBase {
 
         Assert.assertEquals(after,before+1);
     }
-   /* @Test
+    @Test
     public void addingContactWithoutEmail(){
         app.getContactHelper().addContact(new ContactData("Alex", "Vasin", "Russia", "0987654321", "123456789", ""));
     }
     @Test
     public void addingContactWithoutPhone(){
         app.getContactHelper().addContact(new ContactData("Alex", "Vasin", "Russia", "", "", "vasya@mail.ru"));
-    }*/
+    }
 
 
 }

@@ -44,4 +44,17 @@ public class GroupHelper extends HelperBase {
     public int getGroupCount() {
         return driver.findElements(By.name("selected[]")).size();
     }
+
+    public void returnToGroupsPage() { click(By.linkText("group page")); }
+
+    public boolean isThereAGroup() {
+        return isElementPresent(By.name("selected[]"));
+    }
+
+    public void createGroup() {
+        initGroupCreation();
+        fillGroupForm(new GroupData("name", "header", "footer"));
+        submitGroupCreation();
+        returnToGroupsPage();
+    }
 }

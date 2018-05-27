@@ -19,7 +19,7 @@ public class NavigationHelper extends HelperBase {
         click(By.linkText("groups")); }
 
     public void goToHomePage(){
-        driver.findElement(By.cssSelector("#nav > ul > li:nth-child(1) > a"));
+        click(By.xpath("//*[contains(text(), 'home')]"));
     }
 
 
